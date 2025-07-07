@@ -1,18 +1,27 @@
-# Kiro pkgbuild
+# KaosArch Calamares configuration
 
-![Kiro Logo](kiro.jpg)
+![KaosArch Logo](KaosArch.png)
 
-![Kiro Logo](kiro-xfce.jpg)
+######################################################################
+######################################################################
+##########          THIS PAGE IS UNDER CONTRUCTION           #########
+######################################################################
+######################################################################
 
-![Kiro Logo](kiro-chadwm.jpg)
+![KaosArch Logo](kiro-xfce.jpg)
+
+![KaosArch Logo](kiro-chadwm.jpg)
 
 # Download
 
-You can download the latest Kiro ISO from [our SourceForge page](https://sourceforge.net/projects/kiro/files/).
+You can download the latest KaosArch ISO from [TBD](https://sourceforge.net/projects/kiro/files/).
 
-**Kiro** is a customizable Arch Linux ISO builder based on the ArcoLinux project. It provides a simple way to build your own Arch-based installation medium with your choice of packages, settings, and scripts.
+**KaosArch** is a customizable Arch Linux ISO builder based on the ArcoLinux project. It provides a simple way to build your own Arch-based installation medium with your choice of packages, settings, and scripts.
 
-Kiro is my personal choice:
+This distribution was created using the excelent tutorial by [Eric Dubois](https://www.youtube.com/@ErikDubois)
+You can find the tutorial here: [](https://youtu.be/3jdKH6bLgUE)
+
+KaosArch is my personal choice:
 
 - systemboot
 - ext4
@@ -46,6 +55,7 @@ Follow this tuturial and you are already half way there.
 https://youtu.be/3jdKH6bLgUE 
 
 Live long and prosper
+
 
 # Major changes after the videos on youtube
 

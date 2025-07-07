@@ -28,8 +28,8 @@ echo "Updated PKGBUILD: pkgver=${NEW_VER}, pkgrel=${NEW_REL}"
 
 
 # CONFIGURATION
-CHROOT="$HOME/Documents/chroot-archlinux"
-DEST_DIR="/home/erik/KIRO/kiro_repo/x86_64/"
+CHROOT="$HOME/Programing/ArchISOs/chroot-archlinux"
+DEST_DIR="/home/pedro/Programing/ArchISOs/KaosArch/kaosarch_repo/x86_64/"
 CHOICE=2  # Default to makepkg
 MAKEPKG_LIST=()  # Add package names here that should always use makepkg
 

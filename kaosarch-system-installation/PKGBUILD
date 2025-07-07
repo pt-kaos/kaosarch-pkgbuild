@@ -1,13 +1,13 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
-pkgname=kiro-system-installation-next
-_pkgname=kiro-system-installation-next
+pkgname=kaosarch-system-installation
+_pkgname=kaosarch-system-installation
 _destname1="/etc"
-#_destname2="/usr"
-pkgver=25.06
-pkgrel=11
-pkgdesc="system installation config for kiro"
+_destname2="/usr"
+pkgver=25.07
+pkgrel=01
+pkgdesc="system installation config for kaosarch"
 arch=('any')
-url="https://github.com/kirodubes/${_pkgname}"
+url="https://github.com/pt-kaos/${_pkgname}"
 license=('GPL3')
 makedepends=('git')
 depends=()
@@ -19,6 +19,6 @@ install='readme.install'
 package() {
 	mkdir -p "${pkgdir}${_destname1}"
 	cp -r "${srcdir}/${_pkgname}/${_destname1}"* "${pkgdir}"
-#	mkdir -p "${pkgdir}${_destname2}"
-#	cp -r "${srcdir}/${_pkgname}/${_destname2}"* "${pkgdir}"
+	mkdir -p "${pkgdir}${_destname2}"
+	cp -r "${srcdir}/${_pkgname}/${_destname2}"* "${pkgdir}"
 }
