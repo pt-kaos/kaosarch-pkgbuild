@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Install kaosarch Debug
-Comment=Installer for kaosarch debug
+Name=Install KaosArch Debug
+Comment=Installer for KaosArch debug
 GenericName=System Installer
 Keywords=calamares;system;installer;
 TryExec=/usr/bin/calamares_polkit %f -d -style breeze
