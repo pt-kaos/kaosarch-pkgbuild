@@ -2,10 +2,10 @@
 pkgname=kaosarch-calamares-config
 _pkgname=kaosarch-calamares-config
 _destname1="/etc"
-_destname2="/usr"
+#_destname2="/usr"
 _destnamescript="/usr/bin"
 pkgver=25.07
-pkgrel=13
+pkgrel=14
 pkgdesc="calamares config for kaosarch"
 arch=('any')
 url="https://github.com/pt-kaos/${_pkgname}"
@@ -20,8 +20,8 @@ install='readme.install'
 package() {
 	mkdir -p "${pkgdir}${_destname1}"
 	cp -r "${srcdir}/${_pkgname}/${_destname1}"* "${pkgdir}"
-	mkdir -p "${pkgdir}${_destname2}"
-	cp -r "${srcdir}/${_pkgname}/${_destname2}"* "${pkgdir}"
+#	mkdir -p "${pkgdir}${_destname2}"
+#	cp -r "${srcdir}/${_pkgname}/${_destname2}"* "${pkgdir}"
 	mkdir -p "${pkgdir}${_destnamescript}"
-	cp -r "${srcdir}/${_pkgname}/etc/calamares/pkgbuild/build-calamares" "${pkgdir}${_destnamescript}"
+#	cp -r "${srcdir}/${_pkgname}/etc/calamares/pkgbuild/build-calamares" "${pkgdir}${_destnamescript}"
 }
