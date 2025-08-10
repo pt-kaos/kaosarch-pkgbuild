@@ -16,15 +16,13 @@ set -eo pipefail
 #     8 = lightblue
 ##################################################################################################################
 
-tput setaf 4
+tput setaf 6
 echo "=============================================================="
-echo "                    Updating $(basename $0)"
+echo "                    Updating $(basename $(pwd))"
 echo "=============================================================="
 tput sgr0
 
 message="New update"
-
-workdir=$(pwd)
 
 while getopts ":m:" opt; do
   case ${opt} in
@@ -40,19 +38,15 @@ while getopts ":m:" opt; do
   esac
 done
 
-# Send Everything to Github
-git add --all .
+echo "====> git update <===="
 
-git commit -m "$message"    # Commit to local repository with a default message
+git add --all .                           # Add every change to be pushed to git
+git commit -m "$message"                  # Commit to local repository with a default message
+branch=$(git rev-parse --abbrev-ref HEAD) # Get branch name origin or master
+git push -u origin "$branch"              # Push the local files to github
 
-# Push the local files to github
-branch=$(git rev-parse --abbrev-ref HEAD)
-git push -u origin "$branch"
-
-echo
 tput setaf 6
 echo "=============================================================="
 echo "                    $(basename $0) done"
 echo "=============================================================="
 tput sgr0
-echo
